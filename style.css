@@ -1,0 +1,100 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+}
+
+/* Nav styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+.cta-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #388e3c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 50px;
+}
+
